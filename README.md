@@ -50,16 +50,17 @@ Estes testes devem cobrir o básico do novo editor de conteúdos do WordPress, t
 2. Um simples bloco collapse;
 3. Um bloco que busca dados dinamicamente da API usada nos testes anteriores;
 Ao final da entrega, vamos bater um papo sobre como você fez o código.
+
 1 - Hello Word!
 Este teste deve servir para cobrir o básico de se registrar um bloco. O código de registro pode ser feito no próprio tema usado nos testes anteriores. Ao se inserir o seu bloco, um texto em negrito escrito "Hello World!" deve aparecer no editor de blocos. Você pode pesquisar, além da documentação do WordPress mencionada acima, outros tutoriais e ferramentas para te ajudar, só reforçamos que queremos que você explique o funcionamento do seu código.
+
 2 - Criando um collapse interagível
 Está na hora de criar algo com pouco mais de graça. Permita que os usuários definam qual conteúdo textual ele vai ter. Você pode fazer isso tanto modificando uma opção no InspectorControls (A barra lateral de configurações: https://developer.wordpress.org/block-editor/tutorials/block-tutorial/block-controls-toolbar-and-sidebar/) ou usando o componente RichText (https://developer.wordpress.org/block-editor/developers/richtext/).
 Feito isto, permita que o conteúdo seja collapsável. Deve existir um botão dentro do bloco que fará com que o conteúdo todo se esconda ou reapareça. Fique atento que para isso você provavelmente precisará registrar scripts que rodam na versão publicada do seu post! 
+
 3 - Obtendo dados da API
 E se ao invés de deixar o usuário inserir dados você quiser buscar dados de uma API? Crie um bloco que liste itens da API criada anteriormente. Exiba título, descrição e imagens em um card com o layout que você preferir. ATENÇÃO: a consulta a API deve ocorrer não só do lado do editor mas também no post publicado. Isto significa que este bloco agora é dinâmico! Fica a dica: https://developer.wordpress.org/block-editor/tutorials/block-tutorial/creating-dynamic-blocks/
 
-
-
-## endpoints da API REST:
+### endpoints da API REST:
 * posts: http://localhost/wp-json/wp/v2/posts
 * items: http://localhost/wp-json/wp/v2/Item
