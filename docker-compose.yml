@@ -21,7 +21,8 @@ services:
     MYSQL_USER: teste
     MYSQL_PASSWORD: teste
   volumes:
-  - ./data:/var/lib/mysql
+  - ./volumes/data:/var/lib/mysql
+  - ./volumes/init.d:/docker-entrypoint-initdb.d
 
 volumes:
   wp_root:
