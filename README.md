@@ -82,6 +82,6 @@ Se você cehgou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de it
 
 ## Endpoints da API REST:
 
-- Posts: `http://localhost/wp-json/wp/v2/posts`
-- Items: `http://localhost/wp-json/wp/v2/Item`
+- Posts: `http://localhost:8012/wp-json/wp/v2/posts`
+- Items: `http://localhost:8012/wp-json/wp/v2/items`
 - Tipos de Itens: `http://localhost:8012/wp-json/wp/v2/typeItems`
