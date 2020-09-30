@@ -11,7 +11,7 @@ para executar o ambiente do desafio, você precisa ter instalado em sua máquina
 ### estrutura de diretórios:
 a estrutura de diretório do ambiente é descrita a seguir:
 ```
-  data -> pasta que armazena o banco de dados do Mysql com o banco de dados do wordpress.
+  data -> pasta que armazena o banco de dados do wordpress.
   volumes/html -> pasta com os arquivos da instalação do wordpress
   docker-compose.yml -> arquivo yml com a configuração do ambiente
   README.md -> arquivo com instruções
