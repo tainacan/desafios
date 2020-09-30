@@ -54,6 +54,22 @@ password: dev123
 
 > _observação_: o script `run.sh` foi testado somente em ambientes Linux, caso você utilize outro sistema operacional você pode utilizar os comandos padrões do docker-compose: [ `docker-compose down` ]
 
+
+#### problemas comuns:
+
+```
+ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+```
+verifique se o docker foi inicializado corretamente, `docker ps` deve mostrar a lista de containers que está rodando. Pode ser um problema com permissão também, tente usar o __sudo__
+
+---
+
+```
+Error starting userland proxy: listen tcp 0.0.0.0:8012: bind: address already in use
+```
+Algum outro serviço está sendo executado na porta 8012, você deve finalizar esse serviço para que o servidor possa inicializar corretamente.
+
+
 ## Os testes:
 
 Estes testes devem cobrir o básico do novo editor de conteúdos do WordPress, também conhecido como [Gutenberg](https://wordpress.org/gutenberg/). Não esperamos que você já tenha familiaridade com ele do zero, já que ele em si é relativamente recente, mas esperamos que com seus conhecimentos em PHP e React você possa se virar bem com a [documentação](https://developer.wordpress.org/block-editor/developers/) e [tutoriais](https://developer.wordpress.org/block-editor/tutorials/) existentes por aí. Dividimos o teste em quatro fases:
