@@ -62,5 +62,5 @@ Feito isto, permita que o conteúdo seja collapsável. Deve existir um botão de
 E se ao invés de deixar o usuário inserir dados você quiser buscar dados de uma API? Crie um bloco que liste itens da API criada anteriormente. Exiba título, descrição e imagens em um card com o layout que você preferir. ATENÇÃO: a consulta a API deve ocorrer não só do lado do editor mas também no post publicado. Isto significa que este bloco agora é dinâmico! Fica a dica: https://developer.wordpress.org/block-editor/tutorials/block-tutorial/creating-dynamic-blocks/
 
 ### endpoints da API REST:
-* posts: http://localhost/wp-json/wp/v2/posts
-* items: http://localhost/wp-json/wp/v2/Item
+* posts: http://localhost:8012/wp-json/wp/v2/posts
+* items: http://localhost:8012/wp-json/wp/v2/Item
