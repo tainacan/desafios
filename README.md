@@ -13,7 +13,7 @@ Para executar o ambiente do desafio, você precisa ter instalado em sua máquina
 A estrutura de diretório do ambiente é descrita a seguir:
 
 ```
-  data -> pasta que armazena o banco de dados do Mysql com o banco de dados do wordpress.
+  data -> pasta que armazena o banco de dados do wordpress.
   volumes/html -> pasta com os arquivos da instalação do wordpress
   docker-compose.yml -> arquivo yml com a configuração do ambiente
   README.md -> arquivo com instruções
@@ -72,13 +72,16 @@ Feito isto, permita que o conteúdo seja collapsável. Deve existir um botão de
 
 ### 3 - Obtendo dados da API
 
-E se ao invés de deixar o usuário inserir dados você quiser buscar dados de uma API? Crie um bloco que liste itens da API de itens. Exiba título, descrição e imagens em um card com o layout que você preferir. ATENÇÃO: a consulta a API deve ocorrer não só do lado do editor mas também no post publicado. Isto significa que este bloco agora é dinâmico! [Fica a dica!](https://developer.wordpress.org/block-editor/tutorials/block-tutorial/creating-dynamic-blocks/)
+E se ao invés de deixar o usuário inserir dados você quiser buscar dados de uma API? Crie um bloco que liste itens da API de itens. Exiba título, descrição e imagens em um card com o layout que você preferir.
+
+> ATENÇÃO: a consulta a API deve ocorrer não só do lado do editor mas também no post publicado. Isto significa que este bloco agora é dinâmico! [Fica a dica!](https://developer.wordpress.org/block-editor/tutorials/block-tutorial/creating-dynamic-blocks/)
 
 ### 4 - Criando opções de filtragem
 
-Se você cehgou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de itens? Crie uma opção no InspectorControls para filtrar a busca pela taxonomia `typeItems`. Pode ser um select mostrando as opções existentes. Ao se escolher um deles, a busca pela API de itens deve ser filtrada via query. Vale uma pesquisada no Google para entender como APIs do WP realizam esta filtragem, caso você não saiba ;)
+Se você cehgou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de itens? Crie uma opção no InspectorControls para filtrar a busca pela taxonomia `typeItems`. Pode ser um select mostrando os Tipos de Itens existentes. Ao se escolher um deles, a busca pela API de itens deve ser filtrada via query. Vale uma pesquisada no Google para entender como APIs do WP realizam esta filtragem, caso você não saiba ;)
 
 ## Endpoints da API REST:
 
-- posts: http://localhost/wp-json/wp/v2/posts
-- items: http://localhost/wp-json/wp/v2/Item
+- Posts: `http://localhost/wp-json/wp/v2/posts`
+- Items: `http://localhost/wp-json/wp/v2/Item`
+- Tipos de Itens: `http://localhost:8012/wp-json/wp/v2/typeItems`

@@ -682,7 +682,7 @@ function register_custon_post_type() {
 			'description' => 'Items list',
 			'public' => true,
 			'show_in_rest' => true,
-			'rest_base' => 'Item'
+			'rest_base' => 'items'
 		)
 	);
 	add_post_type_support( 'post_type_item', 'thumbnail' );
@@ -710,8 +710,30 @@ function register_custon_post_type() {
 				'with_front' => false, 
 				'hierarchical' => true
 			),
+			'show_in_rest' => true,
+			'rest_base' => 'typeItems'
 		)
 	);
 	
+}
+
+add_action('rest_api_init', 'register_rest_images' );
+function register_rest_images(){
+	register_rest_field( array('post_type_item'),
+		'thumb_media_url',
+		array(
+			'get_callback'    => 'get_rest_featured_image',
+			'update_callback' => null,
+			'schema'          => null,
+		)
+	);
+}
+
+function get_rest_featured_image( $object, $field_name, $request ) {
+	if( $object['featured_media'] ){
+		$img = wp_get_attachment_image_src( $object['featured_media'], 'app-thumb' );
+		return $img[0];
+	}
+	return false;
 }
 
