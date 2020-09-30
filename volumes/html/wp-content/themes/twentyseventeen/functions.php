@@ -682,7 +682,7 @@ function register_custon_post_type() {
 			'description' => 'Items list',
 			'public' => true,
 			'show_in_rest' => true,
-			'rest_base' => 'Item'
+			'rest_base' => 'items'
 		)
 	);
 	add_post_type_support( 'post_type_item', 'thumbnail' );
@@ -710,6 +710,8 @@ function register_custon_post_type() {
 				'with_front' => false, 
 				'hierarchical' => true
 			),
+			'show_in_rest' => true,
+			'rest_base' => 'typeItems'
 		)
 	);
 	

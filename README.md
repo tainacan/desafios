@@ -63,4 +63,5 @@ E se ao invés de deixar o usuário inserir dados você quiser buscar dados de u
 
 ### endpoints da API REST:
 * posts: http://localhost:8012/wp-json/wp/v2/posts
-* items: http://localhost:8012/wp-json/wp/v2/Item
+* items: http://localhost:8012/wp-json/wp/v2/items
+* type items: http://localhost:8012/wp-json/wp/v2/typeItems
