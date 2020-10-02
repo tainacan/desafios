@@ -78,7 +78,7 @@ Estes testes devem cobrir o básico do novo editor de conteúdos do WordPress, t
 2. Um simples bloco collapse;
 3. Um bloco que busca dados dinamicamente de uma API rest;
 4. O mesmo bloco anterior, porém com opções de filtragem;
-5. EXTRA - Blocos dentro de blocos!
+5. Blocos dentro de blocos!
 
 Embora um código possa contribuir para o outro, sugerimos que você faça um bloco para cada, de preferência organizado em suas próprias pastas. Ao final da entrega, vamos bater um papo sobre como você fez o código.
 
@@ -105,7 +105,7 @@ Se você chegou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de it
 
 ### 5 - Um bloco com blocos dentro dele!
 
-Este é um desafio extra: no bloco da lista de itens, você provavelmente usou suas próprias tags de imagem, parágrafo e cabeçalhos para mostrar o card de um item. E se estes caras também forem blocos? Faça com que seu bloco crie uma lista de cards, onde cada card na verdade é composto pelos blocos de Parágrafo e Imagem padrão do WordPress. Para entender como fazer isso você provavelmente vai ter que procurar por estes três conceitos: InnerBlocks e Child Blocks.
+Vamos dificultar um pouco mais: no bloco da lista de itens, você provavelmente usou suas próprias tags de imagem, parágrafo e cabeçalhos para mostrar o card de um item. E se estes caras também forem blocos? Faça com que seu bloco crie uma lista de cards, onde cada card na verdade é composto pelos blocos de Parágrafo e Imagem padrão do WordPress. Para entender como fazer isso você provavelmente vai ter que procurar por estes três conceitos: InnerBlocks e Child Blocks.
 
 ## Endpoints da API REST:
 
