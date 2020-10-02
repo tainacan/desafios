@@ -20,7 +20,7 @@ A estrutura de diretório do ambiente é descrita a seguir:
   volumes/init.d -> script de inicialização da base.
 
   docker-compose.yml -> arquivo yml com a configuração do ambiente
-  
+
   README.md -> arquivo com instruções
 
   run.sh -> script para auxiliar a subir e derrubar o ambiente (apenas ambiente linux)
@@ -54,32 +54,33 @@ password: dev123
 
 > _observação_: o script `run.sh` foi testado somente em ambientes Linux, caso você utilize outro sistema operacional você pode utilizar os comandos padrões do docker-compose: [ `docker-compose down` ]
 
-
 #### problemas comuns:
 
 ```
 ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?
 ```
-verifique se o docker foi inicializado corretamente, `docker ps` deve mostrar a lista de containers que está rodando. Pode ser um problema com permissão também, tente usar o __sudo__
+
+verifique se o docker foi inicializado corretamente, `docker ps` deve mostrar a lista de containers que está rodando. Pode ser um problema com permissão também, tente usar o **sudo**
 
 ---
 
 ```
 Error starting userland proxy: listen tcp 0.0.0.0:8012: bind: address already in use
 ```
-Algum outro serviço está sendo executado na porta 8012, você deve finalizar esse serviço para que o servidor possa inicializar corretamente.
 
+Algum outro serviço está sendo executado na porta 8012, você deve finalizar esse serviço para que o servidor possa inicializar corretamente.
 
 ## Os testes:
 
-Estes testes devem cobrir o básico do novo editor de conteúdos do WordPress, também conhecido como [Gutenberg](https://wordpress.org/gutenberg/). Não esperamos que você já tenha familiaridade com ele do zero, já que ele em si é relativamente recente, mas esperamos que com seus conhecimentos em PHP e React você possa se virar bem com a [documentação](https://developer.wordpress.org/block-editor/developers/) e [tutoriais](https://developer.wordpress.org/block-editor/tutorials/) existentes por aí. Dividimos o teste em quatro fases:
+Estes testes devem cobrir o básico do novo editor de conteúdos do WordPress, também conhecido como [Gutenberg](https://wordpress.org/gutenberg/). Não esperamos que você já tenha familiaridade com ele do zero, já que ele em si é relativamente recente, mas esperamos que com seus conhecimentos em PHP e React você possa se virar bem com a [documentação](https://developer.wordpress.org/block-editor/developers/) e [tutoriais](https://developer.wordpress.org/block-editor/tutorials/) existentes por aí. Dividimos o teste em cinco fases:
 
 1. Um Hello Word! básico dos blocos;
 2. Um simples bloco collapse;
 3. Um bloco que busca dados dinamicamente de uma API rest;
-4. EXTRA - o mesmo bloco anterior, porém com opções de filtragem.
+4. O mesmo bloco anterior, porém com opções de filtragem;
+5. EXTRA - Blocos dentro de blocos!
 
-Ao final da entrega, vamos bater um papo sobre como você fez o código.
+Embora um código possa contribuir para o outro, sugerimos que você faça um bloco para cada, de preferência organizado em suas próprias pastas. Ao final da entrega, vamos bater um papo sobre como você fez o código.
 
 ### 1 - Hello Word!
 
@@ -100,7 +101,11 @@ E se ao invés de deixar o usuário inserir dados você quiser buscar dados de u
 
 ### 4 - Criando opções de filtragem
 
-Se você cehgou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de itens? Crie uma opção no InspectorControls para filtrar a busca pela taxonomia `typeItems`. Pode ser um select mostrando os Tipos de Itens existentes. Ao se escolher um deles, a busca pela API de itens deve ser filtrada via query. Vale uma pesquisada no Google para entender como APIs do WP realizam esta filtragem, caso você não saiba ;)
+Se você chegou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de itens? Crie uma opção no InspectorControls para filtrar a busca pela taxonomia `typeItems`. Pode ser um select mostrando os Tipos de Itens existentes. Ao se escolher um deles, a busca pela API de itens deve ser filtrada via query. Vale uma pesquisada no Google para entender como APIs do WP realizam esta filtragem, caso você não saiba ;)
+
+### 5 - Um bloco com blocos dentro dele!
+
+Este é um desafio extra: no bloco da lista de itens, você provavelmente usou suas próprias tags de imagem, parágrafo e cabeçalhos para mostrar o card de um item. E se estes caras também forem blocos? Faça com que seu bloco crie uma lista de cards, onde cada card na verdade é composto pelos blocos de Parágrafo e Imagem padrão do WordPress. Para entender como fazer isso você provavelmente vai ter que procurar por estes três conceitos: InnerBlocks e Child Blocks.
 
 ## Endpoints da API REST:
 
