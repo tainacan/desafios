@@ -105,7 +105,7 @@ Se você chegou até aqui, parabéns! Que tal melhorarmos um pouco o bloco de it
 
 ### 5 - Um bloco com blocos dentro dele!
 
-Vamos dificultar um pouco mais: no bloco da lista de itens, você provavelmente usou suas próprias tags de imagem, parágrafo e cabeçalhos para mostrar o card de um item. E se estes caras também forem blocos? Faça com que seu bloco crie uma lista de cards, onde cada card na verdade é composto pelos blocos de Parágrafo e Imagem padrão do WordPress. Para entender como fazer isso você provavelmente vai ter que procurar por estes três conceitos: InnerBlocks e Child Blocks.
+Vamos dificultar um pouco mais: no bloco da lista de itens, você provavelmente usou suas próprias tags de imagem, parágrafo e cabeçalhos para mostrar o card de um item. E se estes caras também forem blocos? Faça com que seu bloco crie uma lista de cards, onde cada card na verdade é composto pelos blocos de Parágrafo e Imagem padrão do WordPress. Para entender como fazer isso você provavelmente vai ter que procurar por estes três conceitos: InnerBlocks, Block Templates e Child Blocks.
 
 ## Endpoints da API REST:
 
