@@ -23,9 +23,10 @@ Exemplo de Saída:
 ```
 
 Dicas:
-    • Considere a utilização de algoritmos de classificação (como bubble sort, insertion sort, quicksort, mergesort, etc.) para ordenar os números.
-    • Use estruturas de controle, como loops e condicionais, para separar os números pares e ímpares.
-    • Certifique-se de testar (testes unitários) seu programa com diferentes números aleatórios para garantir que ele funcione corretamente.
+
+* Considere a utilização de algoritmos de classificação (como bubble sort, insertion sort, quicksort, mergesort, etc.) para ordenar os números.
+* Use estruturas de controle, como loops e condicionais, para separar os números pares e ímpares.
+* Certifique-se de testar (testes unitários) seu programa com diferentes números aleatórios para garantir que ele funcione corretamente.
       
 Lembre-se de que este desafio visa testar sua habilidade em gerar números aleatórios, classificar dados em conjuntos diferentes e aplicar algoritmos de classificação para ordenar arrays. Boa sorte e divirta-se resolvendo o desafio!
 
